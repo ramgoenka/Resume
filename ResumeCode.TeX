@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
@@ -25,7 +26,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{0.5in}
+\addtolength{\textheight}{.5in}
 
 \urlstyle{same}
 
@@ -36,10 +37,12 @@
 % formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -66,21 +69,19 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-% RESUME CODE BEGINS %
-
 
 \begin{document}
 
@@ -96,12 +97,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Illinois Urbana-Champaign}{Aug. 2021 -- Dec. 2024}
-      {Bachelor of Science, Mathematics, Minor in Computer Science \& Statistics}{GPA: 3.XX}
+      {Bachelor of Science, Mathematics, Minor in Computer Science \& Statistics}{~~~~}
       \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Completed Coursework}{: Calculus 3, Fundamental Mathematics, Data Science Discovery, Introduction to Computer Science 1 (Java), Introduction to Computer Science 2 (C++)} \\
-     \vspace{3pt}
-     \textbf{Current Coursework}{: Abstract Linear Algebra, Data Structures \& Algorithms, Data Science Exploration, Differential Equations, Statistics \& Probability 1} 
+     \textbf{Relevant Coursework}{: Calculus 3, Fundamental Mathematics, Data Science Discovery, Introduction to Computer Science 1 (Java), Introduction to Computer Science 2 (C++), Abstract Linear Algebra, Data Structures \& Algorithms, Data Science Exploration, Differential Equations, Statistics \& Probability 1} \\
     }}
  \end{itemize}
   \resumeSubHeadingListEnd
@@ -109,8 +108,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.10in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, \LaTeX, Typescript, Mathematica, JavaScript, HTML, Kotlin, C++, CSS} \\
-     \textbf{Tools / Frameworks}{: React.Js, Flask, Node.Js, Bash, Git, Pandas, Matplotlib, Android Studio} 
+     \textbf{Languages}{: Python, Java, C++, \LaTeX, JavaScript, HTML, Kotlin, CSS, Typescript, Mathematica} \\
+     \textbf{Tools}{: React, Flask, Node.Js, Bash, Git, Pandas, Matplotlib, Android Studio, Scikit-learn, Docker, NumPy} 
     }}
  \end{itemize}
 %-----------EXPERIENCE-----------
@@ -121,7 +120,8 @@
       {Course Assistant @ CS 124: Introduction to Computer Science I}{May 2022 -- Present}
       {University of Illinois Urbana-Champaign}{~~~}
       \resumeItemListStart
-        \resumeItem{Spent hours recording original content and lesson walk-through for students, in Java and Kotlin. Actively present on the help site to help students with solving homework problems, Machine Projects (MPs), debugging and cleaning code.}
+        \resumeItem{Helped students in CS 124: Introduction to Computer Science I, understand the basics of programming.}
+        \resumeItem{Spent hours recording original content and lesson walk-through for students, in Java. Actively present on the help site to help students with solving homework problems, Machine Projects (MPs), debugging and cleaning code.}
         \resumeItem{Worked with course staff to review course content to check for validity, accuracy and overall structure of the course website and course content.}
       \resumeItemListEnd
       
@@ -129,17 +129,17 @@
       {NASA L'SPACE Mission Concept Academy - Team Lead Mathematician}{Jan. 2022 -- Apr. 2022}
       {The National Aeronautics and Space Administration}{~~~~~~}
       \resumeItemListStart
-        \resumeItem{Researched algorithms and computing methods to record and transmit seismic data back and forth to the Earth from a rover developed throughout the academy.}
-        \resumeItem{Researched and conducted trade studies for optimal sub-power battery systems to optimize power input.}
+        \resumeItem{Researched algorithms and computing methods to record and transmit seismic data back and forth to the Earth from a rover, developed throughout the academy.}
+        \resumeItem{Researched and conducted trade studies for battery systems to optimize power input with budget constrains.}
         \resumeItem{Collaboratively compiled a document pertaining to each component of the rover. Presented the document to industry experts and academy staff. Gained professional experience while working on a mission with a team.}
     \resumeItemListEnd
 
-    \resumeSubheading
-      {YET TO BE FILLED}{XXX}
-      {XX}{XX, XX}
-      \resumeItemListStart
-        \resumeItem{XX}
-      \resumeItemListEnd
+    %\resumeSubheading
+      %{YET TO BE FILLED}{XXX}
+      %{XX}{XX, XX}
+      %\resumeItemListStart
+        %\resumeItem{XX}
+      %\resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -148,21 +148,35 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{EAT-INI (Website)} $|$ \emph{Python, Flask, React, HTML, CSS, JavaScript, Visual Studio Code}}{Jan. 2022 -- May 2022}
+          {\textbf{EAT-INI (Website)} $|$ \emph{Python, Flask, React, HTML, CSS, JavaScript, Git} \href{https://github.com/CS196Illinois/Group1-SP22}{\color{blue}[GitHub]}}{January 2022}
           \resumeItemListStart
-            \resumeItem{Collaboratively developed a website for on campus students to find eatery options based on user input. Mainly worked on the front-end of the website and connected the front-end to the back-end.}
+            \resumeItem{Collaboratively developed a website for on-campus students to find eatery options based on user input. Worked on the front-end of the website and connecting the front-end to the back-end, which uses a Google Maps API key.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{pixel (Discord Bot)} $|$ \emph{Python, Git, Visual Studio Code}}{May 2022 -- Present}
+          {\textbf{Pixel (Discord Bot)} $|$ \emph{Python, Git} \href{https://github.com/RamGoenka/pixel}{\color{blue}[GitHub]}}{May 2022}
           \resumeItemListStart
-            \resumeItem{Developed a Discord bot containing a variety of commands including: greetings, sending images and GIFs, functioning as a calculator, interactive games such as Tic-Tac-Toe, and other fun, interactive features. Created a web-server for the bot to keep it alive 24/7.}
+            \resumeItem{Developed a Discord bot containing a variety of commands including: greetings, sending images and GIFs, functioning as a calculator, interactive games such as Tic-Tac-Toe, and other features. Created a web-server for the bot to keep it online 24/7.}
           \resumeItemListEnd
         \resumeProjectHeading
-          {\textbf{MultiMode (Google Chrome Extension)} $|$ \emph{HTML, CSS, JavaScript, Visual Studio Code}}{June 2022 -- Present}
+          {\textbf{MultiMode (Google Chrome Extension)} $|$ \emph{HTML, CSS, JavaScript, manifest.JSON, Git} \href{https://github.com/RamGoenka/MutliMode}{\color{blue}[GitHub]}}{June 2022}
           \resumeItemListStart
-            \resumeItem{Developed a Google Chrome extension that allows users to switch from light mode to dark mode. The extension also offers other color options that the user can set as preferred.}
+            \resumeItem{Developed a Google Chrome extension that allows users to switch from light mode to dark mode and vice-versa. The extension also offers other background options that the user can set as preferred.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%----------------ANY EXTRA SECTIONS---------------------
+%----------------EC WORK---------------------
+\section{Extracurricular work}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Drive-train engineer}{Aug. 2021 -- Apr. 2022}
+      {Illini EV Concept}{~~~}
+      \resumeItemListStart
+        \resumeItem{Developed Computer Aided-Design (CAD) models for the drive-train of the E.V. car to meet the specifications and dimensions provided. Tested several models to find the best fit for the car.}
+      \resumeItemListEnd
+     \resumeSubheading
+      {Physics 1 Teaching Assistant}{Jan. 2020 -- May 2020}
+      {The American International School of Muscat}{~~~}
+      \resumeItemListStart
+        \resumeItem{Served as TA for Physics 1. Helped students with test preparation, conducted lab sessions and graded quizzes.}
+      \resumeItemListEnd
 \end{document}
