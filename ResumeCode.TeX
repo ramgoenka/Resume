@@ -1,5 +1,4 @@
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -9,43 +8,30 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{xcolor}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
-
 \pagestyle{fancy}
 \fancyhf{} 
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{.5in}
-
+\addtolength{\textheight}{1.0in}
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-% formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
 \pdfgentounicode=1
-
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-3pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 \newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
@@ -57,35 +43,46 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-%-------------------------------------------
-% RESUME CODE BEGINS %
+
+%----------------RESUME STARTS HERE----------
 \begin{document}
+
+%----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Ram Goenka} \\ \vspace{1pt}
     \small 217-974-1713 $|$ \href{mailto:rgoenka2@illinois.edu}{\underline{rgoenka2@illinois.edu}} $|$ 
     \href{https://www.linkedin.com/in/ram-goenka/}{\underline{linkedin.com/in/ram-goenka/}} $|$
     \href{https://github.com/RamGoenka}{\underline{github.com/RamGoenka}}
 \end{center}
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -98,6 +95,8 @@
     }}
  \end{itemize}
   \resumeSubHeadingListEnd
+
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -120,7 +119,6 @@
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
@@ -128,7 +126,7 @@
           {\textbf{EAT-INI (Website)} $|$ \emph{Python, Flask, React, HTML, CSS, JavaScript, Git} \href{https://github.com/CS196Illinois/Group1-SP22}{\color{blue}[GitHub]}}{~~~}
           \resumeItemListStart
             \resumeItem{Collaborated in a team of 4 students to develop a website for on-campus students, faculty, and visitors to find eatery options based on user input.} 
-            \resumeItem{Worked on the front-end and built the user input system of the website using CSS, HTML and JavaScript. Connected the front-end to the back-end, which uses a Google Maps API key.}
+            \resumeItem{Worked on the front-end and built the user input system of the website using CSS, HTML and JavaScript. Assisted with back-end debugging and connected the front-end to the back-end, which used a Google Maps API key.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Pixel (Discord Bot)} $|$ \emph{Python, Git} \href{https://github.com/RamGoenka/pixel}{\color{blue}[GitHub]}}{~~~}
@@ -140,10 +138,11 @@
         \resumeProjectHeading
           {\textbf{MultiMode (Google Chrome Extension)} $|$ \emph{HTML, CSS, JavaScript, manifest.JSON, Git} \href{https://github.com/RamGoenka/MutliMode}{\color{blue}[GitHub]}}{~~~}
           \resumeItemListStart
-            \resumeItem{Developed a Google Chrome extension that allows users to switch from light mode to dark mode. The extension also offers other background options that the user can set as preferred.}
+            \resumeItem{Built a Google Chrome extension that allows users to switch from light mode to dark mode. The extension also offers other background options that the user can set as preferred.}
             \resumeItem{Used JavaScript and HTML to deploy the various color modes including the dark-mode and designed stylistic elements using CSS.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
+    
 %-----------SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.10in, label={}]
@@ -152,7 +151,8 @@
      \textbf{Tools}{: React, Flask, Node.Js, Bash, Git, Pandas, Matplotlib, Android Studio, Docker, NumPy, Django, Catch2, Qiskit} 
     }}
  \end{itemize}
-%----------------ANY EXTRA SECTIONS---------------------
+
+%----------------EXTRACURRICULARS---------------------------
 \section{Extracurricular work}
   \resumeSubHeadingListStart
   \resumeSubheading
@@ -167,6 +167,7 @@
       \resumeItemListStart
         \resumeItem{Developed Computer Aided-Design (CAD) models for the drive-train of the EV car to meet the specifications and dimensions provided. Tested several models to find the best fit for the car.}
       \resumeItemListEnd
-%----------------END---------------------
+      \resumeSubHeadingListEnd
+%-------------------------------------------
 \end{document}
 
