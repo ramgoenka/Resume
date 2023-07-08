@@ -26,7 +26,7 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-11pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 \pdfgentounicode=1
 \newcommand{\resumeItem}[1]{
@@ -112,10 +112,10 @@
   \resumeSubHeadingListStart
     \resumeEduchead
       {University of Illinois Urbana-Champaign}{Aug. 2021 - May 2025}
-      {Bachelor of Science in Mathematics, Minor in Computer Science \& Statistics}{}
+      {Bachelor of Science in Mathematics, Minor in Computer Science \& Statistics}{GPA: 3.71}
       \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Relevant Coursework}{: Abstract Linear Algebra, Abstract Algebra, Artificial Intelligence, Computer Systems, Data Structures, Differential Equations, Graph Theory, Number Theory, Statistical Programming, Statistics \& Probability I} \\
+     \textbf{Relevant Coursework}{: Linear Algebra, Abstract Algebra, Artificial Intelligence, Computer Systems, Data Structures, Differential Equations, Graph Theory, Number Theory, Statistical Programming Methods, Statistics \& Probability} \\
     }}
  \end{itemize}
   \resumeSubHeadingListEnd
@@ -129,13 +129,14 @@
   {COUNTRY Financial}{~~}
   \resumeItemListStart 
   \resumeItem{Refactored code from SAS to Python using Pandas in order to modernize technology used for company-wide actuarial research. Added robust unit tests using PyTest to verify the written implementation.}
-  \resumeItem{Researched Microsoft Bicep as a tool for infrastructure as code to deploy sample test Azure spring applications. Developed documentation for future use of Bicep as company software.}
-  \resumeItem{Worked with a team of interns to research artificial intelligence (AI) models and their usage in the insurance industry. Worked on developing an AI model using relevant company data.}
+  \resumeItem{Researched Microsoft Bicep as a tool for infrastructure as code to deploy sample test Azure spring applications. Deployed scripts in Bicept and composed documentation for future use of Bicep as company software.}
+  \resumeItem{Worked with a team of interns to research artificial intelligence (AI) models and their usage in the insurance industry. Worked on developing an AI model using relevant company data and insurance concepts.}
     \resumeItemListEnd
   \resumeSubheading
   {Software Development Intern}{Sep. 2022 - Present}
   {National Center for Supercomputing Applications}{~~}
   \resumeItemListStart 
+    \resumeItem{Worked on web interface for Atmospheric Chemistry Simulations led by Professor Nicole Riemer in collaboration with National Center for Atmospheric Research (NCAR).}
   \resumeItem{Developed graphical time-series models to track aerosol particle concentrations and other atmospheric chemical simulations using JavaScript libraries such as D3.js and parsing NetCDF files.}
   \resumeItem{Added support for large input files on the website and improved efficiency between frontend and backend to allow for more data points to be inputted to increase accuracy of outputted graphical models.}
     \resumeItemListEnd
@@ -154,26 +155,34 @@
         \resumeItem{Supported student learning by helping solve homework problems, Machine Projects (MPs), debugging code, and understanding concepts. Mentored 8 Course Assistants to familiarize them with the course interface.}
         \resumeItemListEnd
     \resumeSubheading
-      {Core member}{Jan. 2022 -- Apr. 2022}
+      {Project Scientist}{Jan. 2022 -- Apr. 2022}
       {National Aeronautics and Space Administration LSPACE Academy}{~~~~~~}
       \resumeItemListStart
         \resumeItem{Researched computing methods to record and transmit seismic data in order to record the ground motion of the Moon and better detect Moonquakes.}
         \resumeItem{Conducted studies for battery systems to select the optimal power unit within budget constraints.}
     \resumeItemListEnd
-    
   \resumeSubHeadingListEnd
-
+%---------VE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Project Mentor:} \href{https://sosp.acm.illinois.edu/}{\color{blue}\underline{\emph{Summer of Side Projects @ UIUC}}}}{July 2023 - Present}
+    \resumeItemListStart 
+    \resumeItem{Mentored 170 college students, providing detailed feedback and development support on individual Python projects, such as Flask applications and chatbots. Facilitated creative idea development and advanced coding proficiency.}
+    \resumeItem{Monitored the online summer camp forum to answer student questions regarding logistics and technical concepts.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{EAT-INI (Website)} $|$ \emph{Python, Flask, React, HTML, CSS, JavaScript, Git} \href{https://github.com/RamGoenka/EAT-INI}{\color{blue}[GitHub Repository]}}{~~~}
+          {\textbf{EAT-INI (Website)} $|$ \emph{Python, Flask, React, HTML, CSS, JavaScript, Git} \href{https://github.com/RamGoenka/EAT-INI}{\color{blue}\underline{[GitHub Repository]}}}{~~~}
           \resumeItemListStart
             \resumeItem{Collaborated in a team of 4 students to develop a website to find eatery options, on-campus, based on user input.} 
-            \resumeItem{Worked on the frontend and built the user input system of the website using CSS, HTML and JavaScript. Worked on connecting the frontend to the backend, which used a Google Maps API key.}
+            \resumeItem{Worked on the frontend and built the user input system of the website using CSS, HTML and JavaScript. Worked on connecting the frontend to the backend, which uses a Google Maps API key.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Pixel (Discord Chatbot)} $|$ \emph{Python, Git} \href{https://github.com/RamGoenka/pixel}{\color{blue}[GitHub Repository]}}{~~~}
+          {\textbf{Pixel (Discord Chatbot)} $|$ \emph{Python, Git} \href{https://github.com/RamGoenka/pixel}{\color{blue}\underline{[GitHub Repository]}}}{~~~}
           \resumeItemListStart
           \resumeItem{Deployed a Discord chatbot with multiple features including mathematical abilities, interactive games, setting reminders and countdowns, fixing grammatical errors, translating text from English to other languages and more.}
     \resumeSubHeadingListEnd
@@ -182,7 +191,7 @@
  \begin{itemize}[leftmargin=0.10in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, Java, C, \CC, JavaScript, HTML, CSS, R, Kotlin, TypeScript, Mathematica, \LaTeX} \\
-     \textbf{Tools}{: React.js, Node.js, Gatsby.js, Flask, Git, Pandas, Matplotlib, Docker, NumPy, SciPy, Django, Bash, PyTorch} 
+     \textbf{Tools}{: React.js, Node.js, Gatsby.js, Flask, Git, Pandas, PyTest, Docker, NumPy, SciPy, Django, Bash, PyTorch} 
     }}
  \end{itemize}
 %-------------------------------------------
