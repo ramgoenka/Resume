@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{charter}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}     
+\addtolength{\textheight}{1.4in}  
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Reduce space before and after sections
+\titlespacing{\section}{0pt}{\baselineskip}{\baselineskip} % {left}{before}[after]
+
+% Adjust section title format
+\titleformat{\section}{
+  \vspace{-11pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}: \textit{\small#3} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEduchead}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeEducEduchead}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeTitle}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\addresssymbol}{{\Large\Letter} \thinspace}
+\newcommand{\emailsymbol}{{\Large\Email} \thinspace}
+\newcommand{\phonesymbol}{{\Large\Telefon} \thinspace}
+\newcommand{\homepagesymbol}{{\Huge\faGlobe} \thinspace}
+\newcommand{\linkedinsymbol}{{\Huge\faLinkedin} \thinspace}
+\newcommand{\githubsymbol}{{\Huge\faGithub} \thinspace}
+\newcommand{\twittersymbol}{{\Huge\faTwitter} \thinspace}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\newcommand{\link}[2]{{\color{linkcolour}\href{#1}{#2}}}
+%----------------RESUME STARTS HERE----------
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ram Goenka} \\ \vspace{1pt}
+    \small (217)-974-1713 $|$ \href{mailto:rgoenka2@illinois.edu}{\color{blue}\underline{rag334@pitt.edu}} $|$ 
+    \href{https://www.linkedin.com/in/ram-goenka/}{\color{blue}\underline{linkedin.com/in/ram-goenka/}} $|$
+    \href{https://github.com/RamGoenka}{\color{blue}\underline{github.com/RamGoenka}} $|$
+    \href{http://ramgoenka.github.io/}{\color{blue}\underline{ramgoenka.github.io}}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEduchead
+      {University of Pittsburgh}{Aug. 2025 - May 2027}
+      {Masters of Science in Statistics}{~~}
+    \resumeEduchead
+      {University of Illinois Urbana-Champaign}{Aug. 2021 - May 2025}
+      {Bachelor of Science in Mathematics, Bachelor of Science in Statistics, Minor in Computer Science}{~~}
+\begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    \textbf{Relevant Coursework}{: Data Structures, Graph Theory, Machine Learning, Numerical Methods, Stochastic Processes} \\}}
+\end{itemize}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Analytics Intern}{May 2024 - Aug. 2024}
+      {Synchrony Financial}{~~}
+        \resumeItemListStart
+        \resumeItem{Composed and optimized complex SQL queries to manipulate and aggregate datasets for over 2 million credit accounts for advanced analytics on the recovery strategy and collections team}
+        \resumeItem{Developed predictive models and conducted statistical analyses using SAS, identifying trends and optimizing debt collection strategies. Utilized findings to identify \$20 million in potential gains}
+        \resumeItem{Compiled findings in concise reports and presented data-driven strategies to senior leadership}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Research Assistant}{Jun. 2024 - Aug. 2024}      {\href{https://geometrynyc.wixsite.com/polymathreu}{\color{blue}\underline{Polymath Jr. Research Program}}}{~~}
+        \resumeItemListStart
+        \resumeItem{Researched Macaulay Rings and Posets with \href{https://aseceleanu.github.io/}{\color{blue}\underline{{Prof. Alexandra Seceleanu}}} from the University of Nebraska-Lincoln and \href{https://math.nd.edu/people/faculty/nikola-kuzmanovski/}
+        {\color{blue}\underline{{Dr. Nikola Kuzmanovski}}} from the University of Notre Dame, supported by NSF DMS-2218374}
+        \resumeItem{Collaborated with undergraduate researchers to study if (and how) combining two Macaulay posets in various ways (cartesian, wedge, diamond products) leads to another Macaulay poset. }
+        \resumeItem{Composed algorithms to analyze the additivity of posets and determine if a given poset is Macaulay. Implemented these algorithms in Macaulay2 language code for usage. Documented research findings, key theorems and code}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Research Assistant}{Aug. 2023 - May 2025}
+      {National Center for Supercomputing Applications}{~~}
+        \resumeItemListStart
+        \resumeItem{Collaborated with \href{https://wggp.illinois.edu/directory/profile/rlsdvm}{\color{blue}\underline{{Prof. Rebecca Lee Smith}}} on Center for Disease Control (CDC)-funded projects to transform statistical and mathematical models into interactive RShiny applications, enhancing vector control research}
+        \resumeItem{Revamped the data upload system in the application, enabling seamless dataset uploads, reducing data entry and processing times by an estimated 70\% and facilitating instant visualization through descriptive plots}
+        \resumeItem{Implemented Generalized Additive Models (GAMs) to analyze data, calculating and displaying key inferential statistics to enhance data interpretation}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Research Assistant}{Aug. 2023 - Dec. 2023}
+      {\href{https://asrm.illinois.edu/illinois-risk-lab/}{\color{blue}\underline{Illinois Risk Lab}}}{~~}
+        \resumeItemListStart
+        \resumeItem{Collaborated with \href{https://stat.illinois.edu/directory/profile/rfeng}{\color{blue}\underline{{Prof. Runhuan Feng}}} and \href{https://sites.google.com/view/liupeixin/}{\color{blue}\underline{{Dr. Peixin Liu}}} to research the evolution, history, and current state of Decentralized Autonomous Organizations (DAOs)}
+        \resumeItem{Co-authored a report on the historical evolution, and current state of DAOs, synthesizing research findings and case studies to provide insightful perspectives on their development and future potential}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineering Intern}{May 2023 - Aug. 2023}
+      {COUNTRY Financial}{~~}
+      \resumeItemListStart
+        \resumeItem{Refactored code for insurance processes and calculations on large datasets from SAS to Python using Pandas, achieving a 15\% improvement in performance and speed. Implemented unit tests using PyTest for validation}
+        \resumeItem{Migrated and deployed on-premises Spring applications to Microsoft Azure Cloud, enhancing efficiency and performance. Documented the Azure deployment process for future company use}
+        \resumeItem{Developed a proof of concept for an insurance-focused generative AI model using Azure OpenAI and LangChain, training it on relevant insurance concepts and the company database}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineering Intern}{Aug. 2022 - May 2023}
+      {National Center for Supercomputing Applications}{~~}
+      \resumeItemListStart
+        \resumeItem{Worked as a full-stack engineer in collaboration with the National Center for Atmospheric Research (NCAR) and Dr. Nicole Riemer to develop a web interface for atmospheric chemistry simulations pertaining to aerosol particles}
+        \resumeItem{Wrote Python code to develop time-series models for tracking aerosol particle concentrations utilizing atmospheric data from NetCDF files, and D3.js for the frontend to display the plots}
+        \resumeItem{Improved website backend to support larger file uploads and optimized frontend-to-backend efficiency for fast, accurate and refined plotting of data}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Undergraduate Teaching Assistant}{Aug. 2022 - May 2025}
+      {Siebel School of Computing and Data Science}{~}
+      \resumeItemListStart
+        \resumeItem{Led weekly Python lab sessions of 30 students, aiding with lab prompts, conceptual questions and debugging for CS 107: Data Science Discovery}
+        \resumeItem{Conducted office hours for 1000+ students, offering guidance on data science concepts, programming, statistical concepts, homework problems, labs, Python micro-projects, exam reviews, and troubleshooting GitHub issues}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, \CC, JavaScript, HTML, CSS, R, SQL, Kotlin, SAS, TypeScript, MATLAB, LaTeX}\\
+     \textbf{Tools}{: React.js, Node.js, Gatsby.js, Flask, Git, Pandas, PyTest, PyTorch, Docker, Django, Bash, Microsoft Azure, MongoDB} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
